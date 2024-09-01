@@ -206,9 +206,13 @@ function calculatePMDiagram(Template1, Template2) {
         Activity.reportUsingTemplate(Activity.isOnCP() ? Template2 : Template1)
     ).join('');
 }
+function cleanActivities(){
+    AllActivities = [];
+}
 
 /*
 // Example usage
+cleanActivities();
 addActivity("A", 3, []);
 addActivity("B", 4, ["A"]);
 addActivity("C", 2, ["A"]);
