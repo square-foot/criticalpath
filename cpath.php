@@ -365,10 +365,14 @@ function calculatePMDiagram($Template1, $Template2){
 
     }
 
+function cleanActivities(){
+    global $AllActivities;
+    $AllActivities = array();
+}
 
 /* 
 //Example usage 
-
+cleanActivities();
 addActivity("A",3,[]);
 addActivity("B",4,["A"]);
 addActivity("C",2,["A"]);
