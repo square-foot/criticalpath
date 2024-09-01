@@ -382,6 +382,9 @@ addActivity("F",2,["C"]);
 addActivity("G",4,["D","E"]);
 addActivity("H",3,["F","G"]);
 
+//When adding activities, make sure there is only ONE activity that has no precedessors 
+//and ONLY ONE activity that has no successors (i.e. the activity diagram starts and ends only once)
+
 echo explainPMDiagram("Name: [N], Duration: [D], Predecessors: [PR]\n")."\n";
 
 
